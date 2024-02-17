@@ -31,7 +31,7 @@ const STORE_CORS = process.env.STORE_CORS || "http://localhost:8000";
 const DATABASE_URL =
   process.env.DATABASE_URL || "postgresql://postgres:agcceAfceBA3BDAc-eF45g3-gcf6Gd1C@monorail.proxy.rlwy.net:55668/railway";
 
-const REDIS_URL = process.env.REDIS_URL || "redis://localhost:6379";
+const REDIS_URL = process.env.REDIS_URL || "redis://default:MI4Mmg4DMGJK5Dmdi54pcNgOdpJmJH4e@roundhouse.proxy.rlwy.net:44198";
 
 const plugins = [
   `medusa-fulfillment-manual`,
