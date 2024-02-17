@@ -29,7 +29,7 @@ const ADMIN_CORS =
 const STORE_CORS = process.env.STORE_CORS || "http://localhost:8000";
 
 const DATABASE_URL =
-  process.env.DATABASE_URL || "postgresql://postgres:**6adebc4EbFFeG-c5cbcDe4cBfG2FbD@viaduct.proxy.rlwy.net:55322/railway";
+  process.env.DATABASE_URL || "postgresql://postgres:agcceAfceBA3BDAc-eF45g3-gcf6Gd1C@monorail.proxy.rlwy.net:55668/railway";
 
 const REDIS_URL = process.env.REDIS_URL || "redis://localhost:6379";
 
