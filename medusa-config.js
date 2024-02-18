@@ -55,7 +55,7 @@ const plugins = [
 ];
 
 const modules = {
-  /*eventBus: {
+  eventBus: {
     resolve: "@medusajs/event-bus-redis",
     options: {
       redisUrl: REDIS_URL
@@ -66,7 +66,7 @@ const modules = {
     options: {
       redisUrl: REDIS_URL
     }
-  },*/
+  },
 };
 
 /** @type {import('@medusajs/medusa').ConfigModule["projectConfig"]} */
@@ -85,4 +85,9 @@ module.exports = {
   projectConfig,
   plugins,
   modules,
+    featureFlags: {
+      MEDUSA_FF_PRODUCT_CATEGORIES: true,
+      MEDUSA_FF_ORDER_EDITING: true,
+    },
+   
 };
