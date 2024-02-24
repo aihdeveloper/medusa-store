@@ -52,6 +52,14 @@ const plugins = [
       },
     },
   },
+  {
+    resolve: 'medusa-plugin-variant-images',
+    options: {
+      enableUI: true,
+    },
+  },
+
+
 ];
 
 const modules = {
@@ -77,7 +85,7 @@ const projectConfig = {
   database_url: DATABASE_URL,
   admin_cors: ADMIN_CORS,
   // Uncomment the following lines to enable REDIS
-  // redis_url: REDIS_URL
+  redis_url: REDIS_URL
 };
 
 /** @type {import('@medusajs/medusa').ConfigModule} */
@@ -86,8 +94,8 @@ module.exports = {
   plugins,
   modules,
     featureFlags: {
-      MEDUSA_FF_PRODUCT_CATEGORIES: true,
-      MEDUSA_FF_ORDER_EDITING: true,
+      product_categories: true,
+      order_editing: true,
     },
    
 };
